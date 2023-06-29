@@ -1,11 +1,9 @@
 import React from 'react';
 
-function Main() {
+export default function Main() {
   return (
     <main>
       {/* Add logo and other header content here */}
     </main>
   );
 }
-
-export default Main;

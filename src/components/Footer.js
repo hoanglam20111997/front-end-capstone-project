@@ -1,11 +1,10 @@
 import React from 'react';
 
-function Footer() {
+export default function Footer() {
   return (
-    <footer>
+    <footer className='content'>
       {/* Add logo and other header content here */}
+      Footer
     </footer>
   );
 }
-
-export default Footer;

@@ -1,11 +1,10 @@
 import React from 'react';
+import Nav from './Nav';
 
-function Header() {
+export default function Header({ isNavOpen, setIsNavOpen }) {
   return (
-    <header>
-      {/* Add logo and other header content here */}
+    <header className='fw'>
+        <Nav isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen}/>
     </header>
   );
 }
-
-export default Header;

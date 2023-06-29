@@ -1,0 +1,120 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+    background-color: white;
+}
+
+.nav-right {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    background-color: white;
+    /* Set background color to white */
+    color: black;
+    /* Set text color to black */
+    text-decoration: none;
+    border: none;
+    /* Remove border */
+    padding: 5px 10px;
+    /* Add padding for better appearance */
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: #f4ce14;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    .nav {
+        left: 0;
+        right: 0;
+        width: 50%;
+        min-width: 768px;
+        margin: 0 auto;
+    }
+
+    .nav-logo {
+        width: 150px;
+        margin: 0 15px 0 0;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-img-containt {
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: block;
+        width: 30%;
+        padding: 10px 10px 10px 0;
+    }
+
+    .nav-logo {
+        width: 100%;
+        margin: 0 0 0 10px;
+    }
+
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        float: right;
+        padding: 10px;
+    }
+    
+    .nav-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin-bottom: 5px;
+        transition: transform 0.3s ease;
+    }
+    
+    .nav-toggle.open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .nav-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-right {
+        width: 100%;
+        margin-top: 10px;
+        flex-direction: column;
+        display: none;
+        transition: display 0.3s ease;
+    }
+    
+    .nav-right.open {
+        display: block; /* Set an appropriate maximum height */
+        transition: display 0.3s ease;
+    }
+
+    .nav-link {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
