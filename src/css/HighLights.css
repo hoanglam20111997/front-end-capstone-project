@@ -1,0 +1,89 @@
+.hightlight-title {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+}
+
+.highlight-div-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+}
+
+.highlight-btn {
+    background-color: #f4ce14;
+    border-radius: 10px;
+    border: none;
+    padding: 4% 15% 4% 15%;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+}
+
+.highlight-btn:hover {
+    background-color: #edefee;
+    color: #495e57;
+}
+
+.hightlight-title > h1 {
+    font-family: 'Markazi Text', serif;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    .hightlights-w50 {
+        width: 50%;
+        min-width: 768px;
+        margin: 30px auto;
+    }
+
+    .highlight-btn {
+        font-size: 18px;
+    }
+
+    .hightlight-title > h1 {
+        font-size: 40px;
+    }
+
+    .highlight-btn {
+        position: relative;
+        float: right;
+        margin: 0 0 0 0;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .highlight-header {
+        padding: 5%;
+    }
+
+    .hightlights-w50 {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .highlight-btn {
+        font-size: 2.5vw;
+    }
+
+    .hightlight-title > h1 {
+        font-size: 4vw;
+    }
+
+    .highlight-btn {
+        position: relative;
+        float: right;
+        margin: 0 2vw 0 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

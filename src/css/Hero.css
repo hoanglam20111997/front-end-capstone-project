@@ -29,15 +29,16 @@
     font-family: 'Karla', sans-serif;
 }
 
-.hero-button {
+.hero-btn {
     background-color: #f4ce14;
     border-radius: 15px;
     border: none;
     padding: 2% 4% 2% 4%;
     font-weight: bold;
+    font-family: 'Karla', sans-serif;
 }
 
-.hero-button:hover {
+.hero-btn:hover {
     background-color: #edefee;
     color: #495e57;
 }
@@ -80,7 +81,7 @@
         width: 245px;
     }
 
-    .hero-button {
+    .hero-btn {
         font-size: 18px;
     }
 
@@ -89,7 +90,7 @@
         height: 300px;
         position: relative;
         top: 30px;
-        right: 10px;
+        /* right: 10px; */
     }
 }
 
@@ -111,27 +112,27 @@
     }
 
     .hero-disc > h1 {
-        font-size: 6.4vw;
+        font-size: 6.5vw;
     }
     
     .hero-disc > h2 {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
     
     .hero-disc > p {
-        font-size: 2vw;
-        width: 27vw;
+        font-size: 2.5vw;
+        width: 30vw;
     }
 
-    .hero-button {
-        font-size: 2vw;
+    .hero-btn {
+        font-size: 2.5vw;
     }
 
     .hero-image {
-        width: 33.8vw;
-        height: 39vw;
+        width: 36vw;
+        height: 42vw;
         position: relative;
-        top: 4vw;
+        top: 7vw;
         right: 4vw;
     }
 }

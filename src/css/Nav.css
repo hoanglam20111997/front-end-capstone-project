@@ -2,8 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0 10px 0;
+    padding: 5px 0 5px 0;
     background-color: white;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .nav-right {
@@ -35,13 +36,13 @@
         left: 0;
         right: 0;
         width: 50%;
-        min-width: 768px;
-        margin: 0 auto;
+        min-width: 788px;
+        margin: 0px auto;
     }
 
     .nav-logo {
         width: 150px;
-        margin: 0 15px 0 0;
+        margin: 0 0 0 10px;
     }
 }
 
@@ -58,7 +59,7 @@
         justify-content: center;
         align-items: center;
         display: block;
-        width: 30%;
+        width: 27%;
         padding: 10px 10px 10px 0;
     }
 

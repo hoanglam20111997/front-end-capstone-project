@@ -21,7 +21,7 @@ export default function Hero() {
                             twist.
                         </p>
                         <Link to='/reservation'>
-                            <button className="hero-button">
+                            <button className="hero-btn">
                                 Reserve a Table
                             </button>
                         </Link>

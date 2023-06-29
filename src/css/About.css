@@ -1,0 +1,131 @@
+/* ABOUT */
+.about-us {
+    margin: 15px 0px;
+    background-color: #f4ce14;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-text > h1, h2 {
+    font-family: 'Markazi Text', serif;
+    line-height: 0;
+    font-weight: bold;
+}
+
+.hero-text > p {
+    font-family: 'Karla', sans-serif;
+    color: #495e57;
+}
+
+.double-image {
+    max-height: 18rem;
+    position: relative;
+    top: 4rem;
+    left: 2rem;
+}
+
+.double-image > img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* desktop */
+@media screen and (min-width: 768px) {
+    .hero-text {
+        padding: 0 0 0 20px;
+    }
+
+    .about-us {
+        height: 375px;
+    }
+
+    .hero-text  > h1 {
+        font-size: 40px;
+    }
+
+    .hero-text  > h2 {
+        font-size: 18px;
+    }
+
+    .hero-text  > p {
+        font-size: 16px;
+        width: 300px;
+    }
+
+    .double-image {
+        max-height: 300px;
+        position: relative;
+        top: 63px;
+        left: 35px;
+    }
+
+    .double-image > img {
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .about-1 {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    .about-2 {
+        position: absolute;
+        top: -50px;
+        left: 80px;
+    }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .hero-text {
+        padding: 0 0 0 10vw;
+    }
+
+    .about-us {
+        height: 55vw;
+    }
+
+    .hero-text > h1 {
+        font-size: 40px;
+    }
+
+    .hero-text > h2 {
+        font-size: 4vw;
+    }
+
+    .hero-text  > p {
+        font-size: 2.3vw;
+        width: 35vw;
+    }
+
+    .double-image {
+        max-height: 300px;
+        position: relative;
+        top: 15vw;
+        left: 1vw;
+    }
+
+    .double-image > img {
+        width: 25vw;
+        height: 30vw;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .about-1 {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    .about-2 {
+        position: absolute;
+        top: -50px;
+        left: 80px;
+    }
+}

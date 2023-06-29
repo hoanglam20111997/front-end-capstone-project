@@ -1,0 +1,91 @@
+/* Card.css */
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #edefee;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    width: 70%;
+    font-family: 'Karla', sans-serif;
+}
+
+.card-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ee9972;
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    text-align: end;
+    font-family: 'Karla', sans-serif;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #495e57;
+    font-family: 'Karla', sans-serif;
+}
+
+.card-delivery {
+    font-size: 16px;
+    color: #495e57;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+}
+
+.card-delivery:hover {
+    color: #ee9972;
+}
+
+/* .card-delivery:visited {
+    color: #495e57;
+} */
+
+.card-icon {
+    margin: 0 0 0 15px;
+}
+
+/* desktop */
+@media screen and (min-width: 768px) {
+    .card {
+        width: 31%;
+    }
+
+    .card-description {
+        min-height: 170px;
+    }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .card-description {
+        min-height: 100px;
+    }
+
+    .card {
+        width: 80%;
+        margin: 3% 0;
+    }
+}

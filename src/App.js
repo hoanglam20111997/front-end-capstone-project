@@ -43,7 +43,6 @@ function App() {
     if (navElement) {
       const newNavHeight = navElement.offsetHeight;
       setNavHeight(newNavHeight);
-      console.log(scrollPosition);
     }
   }, [windowWidth, isNavOpen, scrollPosition]);
 
