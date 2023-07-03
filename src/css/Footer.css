@@ -1,0 +1,90 @@
+.footer-ct {
+    background-color: #495e57;
+    color: #edefee;
+    font-family: 'Karla', sans-serif;
+}
+
+.dp-flex {
+    display: flex;
+}
+
+.left-content {
+    background-color: #f4ce14;
+    height: 100%;
+    flex: 1.2;
+    text-align: center;
+    justify-content: center; /* Center child elements horizontally */
+    align-items: center; /* Center child elements vertically */
+    padding: 1%;
+}
+
+.left-content > img{
+    width: 90%;
+}
+
+.footer-email {
+    color: #f4ce14;
+}
+
+.center-content {
+    padding: 0 2%;
+    flex: 5.8;
+    vertical-align: top;
+}
+
+.right-content {
+    padding: 0 2%;
+    flex: 3;
+    vertical-align: top;
+}
+
+.social-li {
+    display: inline-block;
+    margin: 0 3%;
+    color: #f4ce14; /* Yellow color */
+    text-decoration: none; /* No underline */
+}
+
+.social-li a {
+    color: #f4ce14; /* Yellow color */
+    text-decoration: none; /* No underline */
+}
+  
+.social-li a:hover {
+    text-decoration: underline; /* Underline on hover (optional) */
+}
+
+.social-media-list > a {
+    text-decoration: none;
+    color: red;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    .footer-w50 {
+        width: 50%;
+        min-width: 768px;
+        margin: 0px auto;
+    }
+
+    .highlight-btn {
+        font-size: 18px;
+    }
+
+    .hightlight-title > h1 {
+        font-size: 40px;
+    }
+
+    .highlight-btn {
+        position: relative;
+        float: right;
+        margin: 0 0 0 0;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .footer-w50 {
+        width: 100%;
+    }
+}

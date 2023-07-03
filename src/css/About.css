@@ -6,6 +6,13 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.about-us {
+    margin: 15px 0px;
+    background-color: #f4ce14;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .hero-text > h1, h2 {
     font-family: 'Markazi Text', serif;
     line-height: 0;
@@ -15,19 +22,6 @@
 .hero-text > p {
     font-family: 'Karla', sans-serif;
     color: #495e57;
-}
-
-.double-image {
-    max-height: 18rem;
-    position: relative;
-    top: 4rem;
-    left: 2rem;
-}
-
-.double-image > img {
-    width: 60%;
-    height: 100%;
-    object-fit: cover;
 }
 
 /* desktop */
@@ -82,12 +76,14 @@
 
 /* mobile */
 @media (max-width: 767px) {
-    .hero-text {
-        padding: 0 0 0 10vw;
+    .about-us {
+        grid-template-columns: 1fr; /* Make it a vertical grid with one column */
+        align-items: center;
+        height: 600px;
     }
 
-    .about-us {
-        height: 55vw;
+    .hero-text {
+        padding: 0 0 0 10vw;
     }
 
     .hero-text > h1 {
@@ -95,24 +91,24 @@
     }
 
     .hero-text > h2 {
-        font-size: 4vw;
+        font-size: 18px;
     }
 
     .hero-text  > p {
-        font-size: 2.3vw;
-        width: 35vw;
+        font-size: 16px;
+        width: 90%;
     }
 
     .double-image {
-        max-height: 300px;
+        margin: 50px 0 0 0;
+        width: 100%;
         position: relative;
-        top: 15vw;
-        left: 1vw;
+        text-align: center;
     }
 
     .double-image > img {
-        width: 25vw;
-        height: 30vw;
+        width: 40vw;
+        height: 45vw;
         object-fit: cover;
         border-radius: 5px;
     }
@@ -122,7 +118,7 @@
         top: 0;
         left: 0;
     }
-    
+
     .about-2 {
         position: absolute;
         top: -50px;
