@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Routing from './components/Routing';
 import Footer from './components/Footer';
-
 function App() {
+
   const [isNavOpen, setIsNavOpen] = useState(0);
   const [navHeight, setNavHeight] = useState(0);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './../css/Nav.css'
-import { Link } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 export default function Nav({ isNavOpen, setIsNavOpen }) {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
+  const [activeLink, setActiveLink] = useState(currentPath);
+
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const [navHeight, setNavHeight] = useState(0);
@@ -62,17 +67,17 @@ export default function Nav({ isNavOpen, setIsNavOpen }) {
       
       <div className={`nav-right ${isNavOpen ? 'open' : ''}`}>
         <hr className='mb fw'/>
-        <Link to="/" className="nav-link">Home</Link>
+        <NavLink exact to="/" className="nav-link" activeClassName="active">Home</NavLink>
         <hr className='mb fw'/>
-        <Link to="/about" className="nav-link">About</Link>
+        <NavLink to="/about" className="nav-link" activeClassName="active">About</NavLink>
         <hr className='mb fw'/>
-        <Link to="/menu" className="nav-link">Menu</Link>
+        <NavLink to="/menu" className="nav-link" activeClassName="active">Menu</NavLink>
         <hr className='mb fw'/>
-        <Link to="/reservation" className="nav-link">Reservations</Link>
+        <NavLink to="/reservation" className="nav-link" activeClassName="active">Reservations</NavLink>
         <hr className='mb fw'/>
-        <Link to="/order" className="nav-link">Order Online</Link>
+        <NavLink to="/order" className="nav-link" activeClassName="active">Order Online</NavLink>
         <hr className='mb fw'/>
-        <Link to="/login" className="nav-link">Login</Link>
+        <NavLink to="/login" className="nav-link" activeClassName="active">Login</NavLink>
         <hr className='mb fw'/>
       </div>
     </nav>

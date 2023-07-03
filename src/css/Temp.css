@@ -1,0 +1,53 @@
+.temp-w50 {
+    background-color: #f4ce14;
+    color: #495e57;
+    padding: 2% 0 4% 0;
+}
+
+.temp-text {
+    padding: 0 10%;
+}
+
+.temp-text > h1, h2 {
+    font-family: 'Markazi Text', serif;
+    line-height: 0;
+    font-weight: bold;
+    color: black;
+}
+
+.temp-text > h1 {
+    font-size: 64px;
+}
+
+.temp-text > h2 {
+    font-size: 40px;
+}
+
+.temp-title {
+    font-size: 64px;
+}
+
+.temp-text > p {
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+}
+
+.tmp-img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .temp-w50 {
+        padding: 50px 0;
+        width: 50%;
+        min-width: 768px;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .temp-w50 {
+        width: 100%;
+    }
+}

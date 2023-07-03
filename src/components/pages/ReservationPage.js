@@ -1,5 +1,6 @@
 
-export default function Reservation() {
+
+export default function ReservationPage() {
     return (
         <div className="content fh">
             Reservation
