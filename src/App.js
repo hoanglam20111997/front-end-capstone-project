@@ -1,7 +1,7 @@
 import './css/App.css';
 import { useEffect, useState } from 'react';
 import Header from './components/Header';
-import Routing from './components/Routing';
+import { Routing } from './components/Routing';
 import Footer from './components/Footer';
 function App() {
 
@@ -54,7 +54,7 @@ function App() {
     <>
       <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen}/>
       <div className="content" style={contentStyles}>
-        <Routing />
+        <Routing/>
       </div>
       <Footer />
     </>

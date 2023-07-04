@@ -1,6 +1,6 @@
 import Temp from "../Temp";
 
-export default function MenuPage() {
+export const MenuPage = () => {
     return (
         <div className="content fh">
             <Temp title={"Menu Page"}/>

@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './../css/Nav.css'
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Nav({ isNavOpen, setIsNavOpen }) {
-  const location = useLocation();
-  const currentPath = location.pathname;
-
-  const [activeLink, setActiveLink] = useState(currentPath);
-
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const [navHeight, setNavHeight] = useState(0);
@@ -57,14 +52,14 @@ export default function Nav({ isNavOpen, setIsNavOpen }) {
             className="nav-logo"
           />
         </div>
-        
+
         <div className={`nav-toggle ${isNavOpen ? 'open' : ''} mb`} onClick={toggleNav}>
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
-      
+
       <div className={`nav-right ${isNavOpen ? 'open' : ''}`}>
         <hr className='mb fw'/>
         <NavLink exact to="/" className="nav-link" activeClassName="active">Home</NavLink>

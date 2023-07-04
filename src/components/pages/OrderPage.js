@@ -1,6 +1,6 @@
 import Temp from "../Temp";
 
-export default function OrderPage() {
+export const OrderPage = () => {
     return (
         <div className="content fh">
             <Temp title={"Order Page"}/>

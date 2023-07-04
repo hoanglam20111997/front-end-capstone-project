@@ -1,7 +1,7 @@
 import Hero from "../Hero";
 import HighLights from "../HighLights";
 
-export default function Homepage() {
+export const Homepage = () => {
     return (
         <div className="fh">
             <Hero/>

@@ -1,0 +1,48 @@
+.submit-form {
+    display: grid;
+    gap: 15px;
+    padding: 5%;
+}
+
+.submit-form > label, input, select {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+}
+
+.submit-form > input, select {
+    width: 90%;
+}
+
+.booking-btn {
+    background-color: #f4ce14;
+    border-radius: 15px;
+    border: none;
+    padding: 2% 4% 2% 4%;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    width: 30%;
+}
+
+.booking-btn:hover {
+    background-color: #edefee;
+    color: #495e57;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    .booking-btn {
+        font-size: 18px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .booking-btn {
+        font-size: 2.5vw;
+    }
+
+    .submit-form > label, input, select {
+        font-family: 'Karla', sans-serif;
+        font-size: 2vw;
+    }
+}

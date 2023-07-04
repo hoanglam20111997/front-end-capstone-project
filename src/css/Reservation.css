@@ -1,0 +1,32 @@
+.welcome-header {
+    color: #f4ce14;
+    font-family: 'Markazi Text', serif;
+    line-height: 0;
+    font-size: 40px;
+    padding: 0 5%;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    .reservation-w50 {
+        width: 50%;
+        min-width: 768px;
+        margin: 0px auto;
+        padding: 40px 0 0 0;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .reservation-w50 {
+        width: 100%;
+        padding: 40px 0 0 0;
+    }
+
+    .welcome-header {
+        color: #f4ce14;
+        font-family: 'Markazi Text', serif;
+        line-height: 0;
+        font-size: 4vw;
+    }
+}
