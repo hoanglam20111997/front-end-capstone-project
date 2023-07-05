@@ -43,10 +43,22 @@ export const BookingForm = () => {
     return (
         <form className="submit-form" onSubmit={handleSubmit}>
             <label htmlFor="res-date">Choose date</label>
-            <input type="date" id="res-date" value={date.toISOString().split('T')[0]} onChange={(e) => setDate(new Date(e.target.value))} />
+            <input
+                type="date"
+                id="res-date"
+                value={date.toISOString().split('T')[0]}
+                onChange={(e) => setDate(new Date(e.target.value))}
+                required // This field is required
+                min={new Date().toISOString().split('T')[0]} // Minimum date allowed is today
+            />
 
             <label htmlFor="res-time">Choose time</label>
-            <select id="res-time" value={time} onChange={(e) => setTime(e.target.value)}>
+            <select
+                id="res-time"
+                value={time}
+                onChange={(e) => setTime(e.target.value)}
+                required // This field is required
+            >
                 {availableTimes.map((timeOption) => (
                     <option key={timeOption}>{timeOption}</option>
                 ))}
@@ -56,21 +68,29 @@ export const BookingForm = () => {
             <input
                 type="number"
                 placeholder="1"
-                min="1"
-                max="10"
+                min="1" // Minimum value allowed is 1
+                max="10" // Maximum value allowed is 10
                 id="guests"
                 value={guests}
                 onChange={(e) => setGuests(e.target.value)}
+                required // This field is required
             />
 
             <label htmlFor="occasion">Occasion</label>
-            <select id="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)}>
+            <select
+                id="occasion"
+                value={occasion}
+                onChange={(e) => setOccasion(e.target.value)}
+                required // This field is required
+            >
                 <option value="birthday">Birthday</option>
                 <option value="anniversary">Anniversary</option>
                 <option value="other">Other</option>
             </select>
 
-            <button type="submit" className='booking-btn'>Submit</button>
+            <button type="submit" className='booking-btn' disabled={!time || !guests || !occasion || guests < 1}>
+                Submit
+            </button>
         </form>
     );
 };

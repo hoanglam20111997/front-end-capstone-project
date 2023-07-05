@@ -53,9 +53,9 @@ function App() {
   return (
     <>
       <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen}/>
-      <div className="content" style={contentStyles}>
+      <main className="content" style={contentStyles}>
         <Routing/>
-      </div>
+      </main>
       <Footer />
     </>
   );
